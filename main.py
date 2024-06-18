@@ -8,6 +8,7 @@ engine.setProperty('rate', 170)
 city = input("Enter the city name : ")
 url = f"http://api.weatherapi.com/v1/current.json?key=5f9b5fd4e5344727a54195420230711&q={city}&aqi=yes"
 req = requests.get(url)
+print(city)
 
 dict = json.loads(req.text)
 
